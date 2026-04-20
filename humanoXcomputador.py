@@ -5,85 +5,48 @@ placarHumano = 0
 placarMaquina = 0
 
 maoTres = '''
-                          ++####                        
-                          ++    ##                      
-              ########    ++      ##                    
-            ##      ##    ++      ##                    
-            ##        ##  ++      ##  ####--            
-            ##        ##  ++      ######  MM            
-            ##        ##  ++      ####      ##          
-            ##        ####++      ####      ##          
-              ##        ##++      ##        MM            
-              ##        ##++      ##       MM            
-              ##        ##++    ####       MM            
-                ##              ##         MM##          
-                ##                         --####        
-                ++++++++++++++         ++++    ##        
-                ##            ##       ##      ##        
-              ##              ##       ##      ##        
-            ##                ##       ##      ##        
-            ##              ##         ##    ##          
-            ##        ######           ##    ##          
-            ##              ##           ####            
-              ##              ##          MM            
-                ##            ##          --            
-                  ##          ##        ##--            
-                    ####  ++##        ####              
-                        ################                
+  ____    ___
+ |    -  |   -  ---
+ |     | |    ||    -
+  |    | |    |     |   
+  #    ||    |     |
+ |     ||    |    |--
+|---------   |  |   |
+|    ____-      |   )
+ |       |      |___) 
+  #       |      ==
+   #_  __|     ===
+     ===========
 '''
 
 maoDois = '''
-                             ####                        
-                          ##     ##                      
-              ########    ##       ##                    
-            ++      ##    ##       ##                    
-            ++      ##    ##       ##                    
-            ++        ##  ##       ##                    
-            ++         ##  ##      ##                    
-            ++          ######     ##                    
-              ##        ####      ##                    
-              ##        ####      ##                    
-                ##            ####  ++++######          
-                ##            ##      ++    ####        
-                ##    ########        ++##    ##        
-                  ####      ##        ##      ##        
-                ##            ##      ##      ##        
-              ::              ##      ##      ##        
-              ++             ##       ##      ##          
-              ++        ######  ##    ####    ##          
-              ++              ##  ####    ####            
-              ##              ##          ##            
-              ##              ##          ##            
-                  ##          ##        ##              
-                    ####    ##        ####              
-                        ################                
+  ____    ___
+ |    -  |   -  
+ |     | |    |   
+  |    | |    |        
+  #    ||    |     
+ |     ||   _|_  ___
+|--------- |   ||   |
+|    ____- |   ||   )
+ |       | |___)|___) 
+  #       |      ==
+   #_  __|     ===
+     ===========
 '''
 
 maoUm = '''
-                  ######                                
-                ##      ##                              
-                ##      ##                              
-                ##      ##                              
-                ##        ##                            
-                ##        ##                            
-                ##        ##                            
-                ##        ##                            
-                  ##      ####                          
-                  ##      ##  ##  ######                
-                  ##      ##    ##      ##::##          
-                  ##      ##    ##      ##mm####        
-                  ####      ####        ##      ##        
-                ##            ##        ##      ##        
-              ##              ##        ##      ##        
-              ##              ##        ##      ##        
-              ##              ##        ##    ##          
-              ##        ######  ##    ####    ##          
-              ##              ##  ####    ####            
-              ##              ##          MM            
-                ##            ##          mm            
-                  ##          ##        ##mm            
-                    ####    ##        ####              
-                        ################                
+  ____   
+ |    - 
+ |     |  
+  |    |      
+  #    |     
+ |     |-- -__  ___
+|---------||   ||   |
+|    ____-||   ||   )
+ |       |||___)|___) 
+  #       |      ==
+   #_  __|     ===
+     ===========
 '''
 
 jokenpo = '''
@@ -94,9 +57,7 @@ jokenpo = '''
 |____/   |____/  /_/ |_|  /_____/   /_/ |_/   /_/      |____/
 '''
 
-divisao = '''
-===============================================================
-'''
+divisao = '''==============================================================='''
 
 ja = '''
        __    ___     __
@@ -107,12 +68,12 @@ ja = '''
 '''
 
 pedra = '''
-    _______
----'   ____)
+    _____
+---'__   |__
+      |  |__)
+      |__)__)
       (_____)
-      (_____)
-      (____)
----.__(___)
+---.__(____)
 '''
 papel = '''
     _______
@@ -138,6 +99,14 @@ vs = '''
 | | / /   |__  |
 | |/ /   ___/ /
 |___/   /____/
+'''
+
+placar = '''
+    ____     __     ___    ______    ___     ____
+   / __ |   / /    /   |  / ____/   /   |   / __ |
+  / /_/ /  / /    / /| | / /       / /| |  / /_/ /
+ / ____/  / /___ / ___ |/ /___    / ___ | / _, _/
+/_/      /_____//_/  |_||____/   /_/  |_|/_/ |_|
 '''
 
 print(jokenpo)
@@ -182,7 +151,6 @@ elif(escolhaModalidade == 2):
 
         numeroAleatorio = random.randint(1, 3)
 
-        print(" ")
         print(divisao)
         time.sleep(1)
         print(" ")
@@ -216,14 +184,12 @@ elif(escolhaModalidade == 2):
             time.sleep(1)
             if(numeroAleatorio == 2):
                 print(papel)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("COMPUTADOR venceu!")
                 placarMaquina+= 1
             elif(numeroAleatorio == 3):
                 print(tesoura)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("HUMANO venceu!")
@@ -242,14 +208,12 @@ elif(escolhaModalidade == 2):
             time.sleep(1)
             if(numeroAleatorio == 1):
                 print(pedra)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("HUMANO venceu!")
                 placarHumano+= 1
             elif(numeroAleatorio == 3):
                 print(tesoura)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("COMPUTADOR venceu!")
@@ -268,14 +232,12 @@ elif(escolhaModalidade == 2):
             time.sleep(1)
             if(numeroAleatorio == 1):
                 print(pedra)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("COMPUTADOR venceu!")
                 placarMaquina+= 1
             elif(numeroAleatorio == 2):
                 print(papel)
-                print(" ")
                 time.sleep(2)
                 print(divisao)
                 print("HUMANO venceu!")
@@ -287,10 +249,21 @@ elif(escolhaModalidade == 2):
         print("Sair - 0")
         print(" ")
         escolhaContinuar = int(input("Sua escolha: "))
+
+        while escolhaContinuar < 0 or escolhaContinuar > 1:
+          print(" ")
+          print("Escolha um número entre 0 e 1!")
+          print(" ")
+          escolha = int(input("Digite novamente sua escolha: "))
         
         if(escolhaContinuar == 0):
-            print("Placar")
-            print(f"H - {placarHumano} X M - {placarMaquina}")
+            print(divisao)
+            time.sleep(1)
+            print(placar)
+            time.sleep(1)
+            print(" ")
+            print(f"HUMANO - {placarHumano} X COMPUTADOR - {placarMaquina}")
+            print(" ")
             infinito = 0
 elif(escolhaModalidade == 3):
     print("Nada ainda...")
