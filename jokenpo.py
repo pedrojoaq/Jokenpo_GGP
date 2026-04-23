@@ -1,5 +1,7 @@
 import random
 import time
+import pwinput
+
 infinito = 1
 placarHumano = 0
 placarMaquina = 0
@@ -142,13 +144,13 @@ if(escolhaModalidade == 1):
         print(" ")
         print("Tesoura - 3")
         print(" ")
-        escolhaJogadorUm = int(input("Digite sua escolha: "))
+        escolhaJogadorUm = int(pwinput.pwinput(prompt='Digite sua escolha: ', mask='*'))
 
         while escolhaJogadorUm < 1 or escolhaJogadorUm > 3:
             print(" ")
             print("Escolha um numero entre 1 e 3!")
             print(" ")
-            escolhaJogadorUm = int(input("Digite novamente sua escolha: "))
+            escolhaJogadorUm = int(pwinput.pwinput(prompt='Digite novamente sua escolha: ', mask='*'))
         
         print(divisao)
 
@@ -160,13 +162,13 @@ if(escolhaModalidade == 1):
         print(" ")
         print("Tesoura - 3")
         print(" ")
-        escolhaJogadorDois = int(input("Digite sua escolha: "))
+        escolhaJogadorDois = int(pwinput.pwinput(prompt='Digite sua escolha: ', mask='*'))
 
         while escolhaJogadorDois < 1 or escolhaJogadorDois > 3:
             print(" ")
             print("Escolha um numero entre 1 e 3!")
             print(" ")
-            escolhaJogadorDois = int(input("Digite novamente sua escolha: "))
+            escolhaJogadorDois = int(pwinput.pwinput(prompt='Digite novamente sua escolha: ', mask='*'))
 
         print(divisao)
         time.sleep(1)
@@ -185,10 +187,7 @@ if(escolhaModalidade == 1):
         print(" ")
         print(divisao)
 
-        if(escolhaJogadorUm == escolhaJogadorDois):
-            print("Empate!")
-
-        elif(escolhaJogadorUm == 1):
+        if(escolhaJogadorUm == 1):
             print("ESCOLHA JOGADOR UM:")
             time.sleep(1)
             print(pedra)
@@ -199,7 +198,12 @@ if(escolhaModalidade == 1):
             print(" ")
             print("ESCOLHA JOGADOR DOIS:")
             time.sleep(1)
-            if(escolhaJogadorDois == 2):
+            if(escolhaJogadorDois == 1):
+                print(papel)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
+            elif(escolhaJogadorDois == 2):
                 print(papel)
                 time.sleep(2)
                 print(divisao)
@@ -229,6 +233,11 @@ if(escolhaModalidade == 1):
                 print(divisao)
                 print("JOGADOR UM venceu!")
                 placarJogadorUm+= 1
+            elif(escolhaJogadorDois == 2):
+                print(papel)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
             elif(escolhaJogadorDois == 3):
                 print(tesoura)
                 time.sleep(2)
@@ -259,6 +268,11 @@ if(escolhaModalidade == 1):
                 print(divisao)
                 print("JOGADOR UM venceu!")
                 placarJogadorUm+= 1
+            elif(escolhaJogadorDois == 3):
+                print(tesoura)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
         
         print(divisao)
         print("Continuar - 1")
@@ -282,6 +296,9 @@ if(escolhaModalidade == 1):
             print(f"JOGADOR UM - {placarJogadorUm} X JOGADOR DOIS - {placarJogadorDois}")
             print(" ")
             infinito = 0
+            print("OBRIGADO POR JOGAR! JOGO FEITO POR: GUILHERME MARTINS MUNIZ, GUSTAVO KENZO SATO HAMADA E PEDRO JOAQUIM FREIRE DE LIMA")
+            print(" ")
+
 elif(escolhaModalidade == 2):
     while infinito != 0:
         print(divisao)
@@ -320,10 +337,7 @@ elif(escolhaModalidade == 2):
         print(" ")
         print(divisao)
 
-        if(escolha == numeroAleatorio):
-            print("Empate!")
-
-        elif(escolha == 1):
+        if(escolha == 1):
             print("SUA ESCOLHA:")
             time.sleep(1)
             print(pedra)
@@ -334,7 +348,12 @@ elif(escolhaModalidade == 2):
             print(" ")
             print("ESCOLHA DO COMPUTADOR:")
             time.sleep(1)
-            if(numeroAleatorio == 2):
+            if (numeroAleatorio == 1):
+                print(pedra)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
+            elif(numeroAleatorio == 2):
                 print(papel)
                 time.sleep(2)
                 print(divisao)
@@ -364,6 +383,11 @@ elif(escolhaModalidade == 2):
                 print(divisao)
                 print("HUMANO venceu!")
                 placarHumano+= 1
+            elif (numeroAleatorio == 2):
+                print(papel)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
             elif(numeroAleatorio == 3):
                 print(tesoura)
                 time.sleep(2)
@@ -394,6 +418,11 @@ elif(escolhaModalidade == 2):
                 print(divisao)
                 print("HUMANO venceu!")
                 placarHumano+= 1
+            elif (numeroAleatorio == 3):
+                print(tesoura)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
         
         print(divisao)
         print("Continuar - 1")
@@ -417,6 +446,9 @@ elif(escolhaModalidade == 2):
             print(f"HUMANO - {placarHumano} X COMPUTADOR - {placarMaquina}")
             print(" ")
             infinito = 0
+            print("OBRIGADO POR JOGAR! JOGO FEITO POR: GUILHERME MARTINS MUNIZ, GUSTAVO KENZO SATO HAMADA E PEDRO JOAQUIM FREIRE DE LIMA")
+            print(" ")
+
 elif(escolhaModalidade == 3):
     while infinito != 0:
         print(divisao)
@@ -472,10 +504,7 @@ elif(escolhaModalidade == 3):
         print(" ")
         print(divisao)
 
-        if(escolhaComputadorUm == escolhaComputadorDois):
-            print("Empate!")
-
-        elif(escolhaComputadorUm == 1):
+        if(escolhaComputadorUm == 1):
             print("ESCOLHA COMPUTADOR UM:")
             time.sleep(1)
             print(pedra)
@@ -486,7 +515,12 @@ elif(escolhaModalidade == 3):
             print(" ")
             print("ESCOLHA COMPUTADOR DOIS:")
             time.sleep(1)
-            if(escolhaComputadorDois == 2):
+            if (escolhaComputadorDois == 1):
+                print(pedra)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
+            elif(escolhaComputadorDois == 2):
                 print(papel)
                 time.sleep(2)
                 print(divisao)
@@ -516,6 +550,11 @@ elif(escolhaModalidade == 3):
                 print(divisao)
                 print("COMPUTADOR UM venceu!")
                 placarComputadorUm+= 1
+            elif (escolhaComputadorDois == 2):
+                print(papel)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
             elif(escolhaComputadorDois == 3):
                 print(tesoura)
                 time.sleep(2)
@@ -546,6 +585,11 @@ elif(escolhaModalidade == 3):
                 print(divisao)
                 print("COMPUTADOR UM venceu!")
                 placarComputadorUm+= 1
+            elif (escolhaComputadorDois == 3):
+                print(tesoura)
+                time.sleep(2)
+                print(divisao)
+                print("Empate!")
         
         print(divisao)
         print("Continuar - 1")
@@ -569,3 +613,5 @@ elif(escolhaModalidade == 3):
             print(f"COMPUTADOR UM - {placarComputadorUm} X COMPUTADOR DOIS - {placarComputadorDois}")
             print(" ")
             infinito = 0
+            print("OBRIGADO POR JOGAR! JOGO FEITO POR: GUILHERME MARTINS MUNIZ, GUSTAVO KENZO SATO HAMADA E PEDRO JOAQUIM FREIRE DE LIMA")
+            print(" ")
