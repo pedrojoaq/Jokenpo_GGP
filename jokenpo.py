@@ -131,7 +131,7 @@ while escolhaModalidade < 1 or escolhaModalidade > 3:
         print(" ")
         print("Escolha um número entre 1 e 3!")
         print(" ")
-        escolha = int(input("Digite novamente sua escolha: "))
+        escolhaModalidade = int(input("Digite novamente sua escolha: "))
 
 if(escolhaModalidade == 1):
     while infinito != 0:
@@ -199,7 +199,7 @@ if(escolhaModalidade == 1):
             print("ESCOLHA JOGADOR DOIS:")
             time.sleep(1)
             if(escolhaJogadorDois == 1):
-                print(papel)
+                print(pedra)
                 time.sleep(2)
                 print(divisao)
                 print("Empate!")
@@ -285,7 +285,7 @@ if(escolhaModalidade == 1):
           print(" ")
           print("Escolha um número entre 0 e 1!")
           print(" ")
-          escolha = int(input("Digite novamente sua escolha: "))
+          escolhaContinuar = int(input("Digite novamente sua escolha: "))
         
         if(escolhaContinuar == 0):
             print(divisao)
@@ -435,7 +435,7 @@ elif(escolhaModalidade == 2):
           print(" ")
           print("Escolha um número entre 0 e 1!")
           print(" ")
-          escolha = int(input("Digite novamente sua escolha: "))
+          escolhaContinuar = int(input("Digite novamente sua escolha: "))
         
         if(escolhaContinuar == 0):
             print(divisao)
@@ -602,7 +602,7 @@ elif(escolhaModalidade == 3):
           print(" ")
           print("Escolha um número entre 0 e 1!")
           print(" ")
-          escolha = int(input("Digite novamente sua escolha: "))
+          escolhaContinuar = int(input("Digite novamente sua escolha: "))
         
         if(escolhaContinuar == 0):
             print(divisao)
