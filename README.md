@@ -2,6 +2,26 @@
 
 Este projeto tem como objetivo implementar o jogo Jokenpô (Pedra, Papel e Tesoura) em Python, utilizando interação via terminal. O programa oferece múltiplas modalidades de jogo e utiliza animações em ASCII para tornar a execução mais dinâmica.
 
+**Como executar o projeto**
+
+Siga os passos abaixo para rodar o jogo corretamente:
+
+1. Instale o Python
+
+Certifique-se de que o Python está instalado em seu computador (não apenas no VS Code).
+
+Download oficial: https://www.python.org/downloads/
+
+Durante a instalação, marque a opção "Add Python to PATH"
+
+2. Instale a biblioteca necessária
+
+Abra o terminal (Prompt de Comando ou terminal do VS Code) e execute:
+
+python -m pip install pwinput
+
+Agora seu computador está apto a executar nosso projeto!
+
 **Regras do Jogo**
 
 O sistema segue as regras tradicionais:
